@@ -1,0 +1,694 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(kec\ hostels.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/*------------------------*/
+nav {
+  display: flex;
+  padding: 0% 6%;
+  padding-bottom: 30pc;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 80px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 62px;
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  /* top rightleft down */
+  font-size: 14px;
+  color: #fff;
+}
+
+.visit-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(157, 255, 0);
+
+  padding: 12pxpx 34px;
+  font-size: 17px;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.visit-btn:hover {
+  border: 1px solid #f44336;
+  background: #f44336;
+  border: 1px solid #fff;
+
+  transition: 1s;
+}
+
+nav .fa {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 20px;
+  }
+
+  .nav-links ul li {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  nav .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .nav-links ul {
+    padding: 30px;
+  }
+}
+
+/*----------home---------*/
+.about {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-col {
+  flex-basis: 35%;
+  background: #f1dfef;
+  width: 30%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.about-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/*-------boys hostel------*/
+
+.boys {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  background-color: rgb(231, 231, 228);
+}
+
+.boys-hostel {
+  padding: 30px 30px;
+  background: #222;
+  color: rgb(253, 242, 242);
+  max-width: 340px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s;
+  max-width: 140px;
+  filter: invert(1);
+  position: relative;
+}
+
+.boys-hostel h2 {
+  bottom: -20px;
+  position: relative;
+}
+
+.boys-hostel:hover {
+  background: #2196f3;
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.boys-hostel img {
+  max-width: 140px;
+  filter: invert(1);
+}
+
+.boys-hostel .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.boys-hostel .content:hover {
+  background: #2196f3;
+}
+
+.content img {
+  max-width: 150px;
+  /* filter: invert(1); */
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  transition: 1s;
+}
+
+/* -------------Girls Hostel---------- */
+.girls {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  background-color: rgb(225, 234, 236);
+}
+
+.girls-hostel {
+  padding: 40px 50px;
+  background: #222;
+  color: rgb(219, 214, 214);
+  max-width: 340px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s;
+  max-width: 140px;
+  filter: invert(1);
+  position: relative;
+}
+
+.girls-hostel:hover {
+  background: #2196f3;
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.girls-hostel img {
+  max-width: 150px;
+  filter: invert(1);
+}
+
+.girls-hostel .content1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.girls-hostel .content1:hover {
+  background: #2196f3;
+}
+
+.content1 img {
+  max-width: 150px;
+  filter: invert(1);
+}
+
+.content1 {
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  transition: 1s;
+}
+
+/*---------Contact----------------*/
+.contact {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(kongu1.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.contact h1 {
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+/*----------media query------------*/
+@media (max-width: 700px) {
+  .contact h1 {
+    font-size: 24px;
+  }
+}
+
+/*-----------footer----------*/
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.icons .fa {
+  color: #f44336;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+
+.fa-heart-o {
+  color: #f44336;
+}
+
+/*-------------------about kec hostel-------------*/
+.sub-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(kec\ hostels.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+.sub-header h1 {
+  margin-top: 100px;
+  position: absolute;
+  bottom: 400px;
+  left: 40%;
+}
+
+.about-hostel {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.about-col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.about-col img {
+  width: 100%;
+}
+
+.about-col h1 {
+  padding-top: 0;
+}
+
+.about-colp {
+  padding: 15px 0 25px;
+}
+
+/*--------------contact-------*/
+.location {
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.location iframe {
+  width: 100%;
+}
+
+.contact-us {
+  width: 80%;
+  margin: auto;
+}
+
+.contact-col {
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+
+.contact-col div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contact-col div .fa {
+  font-size: 28px;
+  color: #f44336;
+  margin: 10px;
+  margin-right: 30px;
+}
+
+.contact-col div p {
+  padding: 0;
+}
+
+.contact-col div h5 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 400;
+}
+
+/*----------mail--------*/
+.formbx {
+  min-width: 60%;
+}
+
+.formbx form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formbx form h3 h1 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.formbx form input,
+.formbx form textarea {
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: rgb(73, 72, 72);
+  color: #fff;
+  resize: none;
+}
+
+.formbx form textarea {
+  min-height: 200px;
+}
+
+.formbx form input::placeholder,
+.formbx form textarea::placeholder {
+  color: #999;
+}
+
+.formbx form input[type="submit"] {
+  max-width: 50px;
+  background: #2196f3;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/*--------Login ---------*/
+.login {
+  width: 150px;
+
+  margin: 1% auto;
+  padding: 10px 0;
+  color: #fff;
+  border-radius: 10%;
+}
+
+.login:hover {
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+}
+
+/*.login-here {
+  text-align: center;
+  margin-bottom: 5px;
+}*/
+/*---------Login Here---------*/
+.ln {
+  width: 500px;
+  background: rgba(0, 0, 0, 0.8);
+  margin: 12% auto;
+  padding: 50px 0;
+  color: #fff;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+}
+
+.ln-here {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.input-box {
+  margin: 31px auto;
+  width: 80%;
+  border-bottom: 1px solid #fff;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  display: flex;
+}
+
+.input-box input {
+  width: 96%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+}
+
+::placeholder {
+  color: #ccc;
+}
+
+.fa {
+  margin-right: 10px;
+}
+
+.eye {
+  position: absolute;
+}
+
+#hide1 {
+  display: none;
+}
+
+.login-btn {
+  margin: 40px auto 20px;
+  width: 80%;
+  display: block;
+  outline: none;
+  padding: 10px 0;
+  border: 1px solid #fff;
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+}
+
+/*----------about image gallery----------*/
+.grid {
+  position: relative;
+  margin: 0 auto;
+  padding: 1em 0 4em;
+  max-width: 1000px;
+  list-style: none;
+  text-align: center;
+}
+
+.grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 480px;
+  max-height: 360px;
+  width: 48%;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+
+.grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption>a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+figure.effect-lily img {
+  max-width: none;
+  width: -webkit-calc(100% + 50px);
+  width: calc(100% + 50px);
+  opacity: 0.7;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-40px, 0, 0);
+  transform: translate3d(-40px, 0, 0);
+}
+
+figure.effect-lily figcaption {
+  text-align: left;
+}
+
+figure.effect-lily figcaption>div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2em;
+  width: 100%;
+  height: 50%;
+}
+
+figure.effect-lily h2,
+figure.effect-lily p {
+  -webkit-transform: translate3d(0, 40px, 0);
+  transform: translate3d(0, 40px, 0);
+}
+
+figure.effect-lily h2 {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+
+figure.effect-lily p {
+  color: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+  transition: opacity 0.2s, transform 0.35s;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover p {
+  opacity: 1;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover h2,
+figure.effect-lily:hover p {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+figure.effect-lily:hover p {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+  -webkit-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+}
